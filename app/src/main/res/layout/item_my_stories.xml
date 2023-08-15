@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="10dp">
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="65dp"
+            android:id="@+id/iv_Profile"
+            android:layout_height="65dp"
+            android:src="@mipmap/ic_launcher"
+            app:shapeAppearanceOverlay="@style/circle"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"/>
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/pic_add"
+            app:shapeAppearanceOverlay="@style/circle"
+            android:scaleType="centerCrop"
+            android:background="#03A9F4"
+            android:layout_gravity="bottom|end"
+            android:adjustViewBounds="true"/>
+    </FrameLayout>
+    <TextView
+        android:id="@+id/tv_Profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your story"
+        android:textColor="@color/black"
+        android:textSize="15sp"/>
+</LinearLayout>
